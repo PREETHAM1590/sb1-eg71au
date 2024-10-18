@@ -1,0 +1,16 @@
+<ActionBar title="Sign Language Recognition"></ActionBar>
+
+<ScrollView>
+  <StackLayout class="p-4">
+    <Label text="Recognition" class="h2 text-center"></Label>
+    <Button text="Capture Sign" (tap)="captureAndRecognize()" class="btn btn-primary"></Button>
+    <Label [text]="recognizedText" class="h2 text-center m-4"></Label>
+
+    <Label text="Training" class="h2 text-center mt-4"></Label>
+    <TextField [(ngModel)]="trainingLabel" hint="Enter label (e.g., A, B, C)" class="input"></TextField>
+    <Button text="Capture for Training" (tap)="captureForTraining()" class="btn btn-secondary"></Button>
+    <Button text="Train Model" (tap)="trainModel()" class="btn btn-success"></Button>
+
+    <Label text="Note: This is a simplified implementation. Actual sign language recognition requires more sophisticated models and data." class="text-center text-muted mt-4"></Label>
+  </StackLayout>
+</ScrollView>

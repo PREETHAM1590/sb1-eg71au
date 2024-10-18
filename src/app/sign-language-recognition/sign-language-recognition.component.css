@@ -1,0 +1,36 @@
+.btn {
+  font-size: 18;
+  font-weight: bold;
+  padding: 10;
+  margin: 10 20;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.h2 {
+  font-size: 24;
+  font-weight: bold;
+}
+
+.input {
+  font-size: 18;
+  padding: 10;
+  margin: 10 20;
+}
+
+.text-muted {
+  color: #6c757d;
+}

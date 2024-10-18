@@ -1,0 +1,44 @@
+{
+  "name": "sign-language-recognition-app",
+  "main": "./src/main.ts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "ns run",
+    "android": "ns run android",
+    "ios": "ns run ios",
+    "build:android": "ns build android --release --key-store-path keystore.jks --key-store-password your_keystore_password --key-store-alias your_alias --key-store-alias-password your_alias_password",
+    "build:ios": "ns build ios --release --for-device",
+    "build": "npm run build:android && npm run build:ios"
+  },
+  "dependencies": {
+    "@angular/animations": "~18.0.0",
+    "@angular/common": "~18.0.0",
+    "@angular/compiler": "~18.0.0",
+    "@angular/core": "~18.0.0",
+    "@angular/forms": "~18.0.0",
+    "@angular/platform-browser": "~18.0.0",
+    "@angular/platform-browser-dynamic": "~18.0.0",
+    "@angular/router": "~18.0.0",
+    "@nativescript/angular": "^18.0.0",
+    "@nativescript/core": "~8.8.0",
+    "@nativescript/camera": "^5.0.15",
+    "@tensorflow/tfjs": "^4.10.0",
+    "@tensorflow/tfjs-core": "^4.10.0",
+    "@tensorflow/tfjs-converter": "^4.10.0",
+    "rxjs": "~7.8.0",
+    "zone.js": "~0.14.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~18.0.0",
+    "@angular/compiler-cli": "~18.0.0",
+    "@nativescript/preview-cli": "1.0.13",
+    "@nativescript/stackblitz": "0.0.8",
+    "@nativescript/tailwind": "^2.1.0",
+    "@nativescript/types-minimal": "~8.8.0",
+    "@nativescript/webpack": "~5.0.0",
+    "@ngtools/webpack": "~18.0.0",
+    "tailwindcss": "~3.4.0",
+    "typescript": "~5.4.0"
+  }
+}
